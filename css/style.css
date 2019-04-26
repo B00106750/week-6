@@ -1,0 +1,242 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    margin: 0px;
+    padding: 0px;
+    background-attachment: fixed;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+}
+
+nav {
+	width: 100%;
+	position: fixed;
+	background-color: #381B68;
+	height: 70px;
+}
+
+header {
+    text-align: center;
+    background-color: #FFFFFF;
+    padding-top: 76px;
+    padding-bottom: 20px;
+}
+footer {
+    text-align: center;
+    clear: both;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 25px;
+    width: 100%;
+    color: white;
+    padding: 0.01em 16px;
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.navlist {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+header img {
+    width: 26%;
+}
+.navlistitem {
+    list-style-type: none;
+    float: right;
+    color: #FFFFFF;
+    padding-top: 22px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 16px;
+    background-color: #381B68;
+}
+.navlistitem a {
+    text-decoration: none;
+    color: #FFFFFF;
+    display: block;
+    padding-top: 0px;
+}
+.navlistitem a:hover {
+    color: #F07E1B;
+	text-decoration: none;
+}
+
+.navlistitem1 {
+    list-style-type: none;
+    color: #FFFFFF;
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    background-color: #381B68;
+	display: none;
+}
+.navlistitem1 a {
+    text-decoration: none;
+    color: #FFFFFF;
+    display: block;
+    padding-top: 0px;
+	float: left;
+}
+.navlistitem1 a:hover {
+    color: #F07E1B;
+	text-decoration: none;
+}
+
+.navlistitem:hover .navlistitem1 {
+	display: block;
+}
+
+.navlistitem2 {
+    list-style-type: none;
+    float: left;
+    color: #FFFFFF;
+    padding-top: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    background-color: #381B68;
+    font-family: Sacramento;
+    font-size: 27px;
+	font-weight: bold;
+}
+.navlistitem2 a {
+    text-decoration: none;
+    color: #FFFFFF;
+    display: block;
+    padding-top: 0px;
+}
+.navlistitem2 a:hover {
+    color: #F07E1B;
+	text-decoration: none;
+}
+
+.poster {
+	width: 100%;
+}
+
+.map {
+	width: 100%;
+}
+
+.info {
+    margin: auto;
+    text-align: left;
+    width: 70%;
+    padding: 20px;
+    color: white;
+    background-color: #1A1F35;
+    border-color: #F07E1F;
+    border-style: solid;
+}
+
+.info img {
+	width: 100%;
+}
+
+.info h1 {
+	color: white;
+	font-weight: bold;
+	font-family: Sacramento;
+}
+
+.info h2 {
+	font-weight: bold;
+}
+
+.info a {
+	text-decoration: none;
+	color: #F07E1B;
+}
+
+.ticket {
+	margin: auto;
+    text-align: left;
+    width: 70%;
+    padding: 20px;
+    color: white;
+    background-color: #1A1F35;
+    border-color: #F07E1F;
+    border-style: solid;
+}
+
+.ticket h2 {
+	background-color: #F07E1F;
+	text-align: center;
+	width: 100%;
+}
+
+.ticket h2 a {
+	color: white;
+	text-decoration: none;
+}
+
+.ticket h2:hover {
+	background-color: #4152B4;
+}
+
+label {
+	color: white;
+	font-weight: bold;
+	margin-left: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 25px;
+	line-height: 40px;
+	display: none;
+}
+
+#toggle {
+	display: none;
+}
+
+@media only screen and (max-width: 500px){
+	label {
+		display: block;
+		cursor: pointer;
+	}
+	
+	.navlist {
+		text-align: left;
+		width: 100%;
+		display: none;
+	}
+	
+	.navlistitem {
+		display: block;
+		border-bottom: solid 1px #FFFFFF;
+		margin: 0;
+		width: 100%;
+	}
+	
+	.navlistitem1 {
+		display: block;
+		border-bottom: solid 1px #FFFFFF;
+		margin: 0;
+		width: 100%;
+	}
+	
+	.navlistitem2 {
+		display: block;
+		border-bottom: solid 1px #FFFFFF;
+		margin: 0;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 18px;
+		font-weight: normal;
+		width: 100%;
+	}
+	
+	#toggle:checked + .navlist {
+		display: block;
+	}
+}
